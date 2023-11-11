@@ -1,8 +1,8 @@
 # page_about.py
 
 import streamlit as st
-import matplotlib.pyplot as plt
-import seaborn as sns
+# import matplotlib.pyplot as plt
+# import seaborn as sns
 import pandas as pd
 from data_pre import data_preprocessing
 # Ignore specific warnings
