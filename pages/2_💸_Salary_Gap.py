@@ -2,8 +2,8 @@
 
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+# import matplotlib.pyplot as plt
+# import seaborn as sns
 from data_pre import data_preprocessing
 # Ignore specific warnings
 st.set_option('deprecation.showPyplotGlobalUse', False)
