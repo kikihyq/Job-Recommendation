@@ -1,11 +1,14 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from rarfile import RarFile
+with RarFile('Kaggle_data.rar', 'r') as rar:
+    rar.extractall('Dataset')
 
 def data_preprocessing():
-    df_2020 = pd.read_csv(r'E:\23Fall\NUS\Course\IT5006\kaggle_survey_2020_responses.csv')
-    df_2021 = pd.read_csv(r'E:\23Fall\NUS\Course\IT5006\kaggle_survey_2021_responses.csv')
-    df_2022 = pd.read_csv(r'E:\23Fall\NUS\Course\IT5006\kaggle_survey_2022_responses.csv')
+    df_2020 = pd.read_csv('Dataset/kaggle_survey_2020_responses.csv')
+    df_2021 = pd.read_csv('Dataset/kaggle_survey_2021_responses.csv')
+    df_2022 = pd.read_csv('Dataset/kaggle_survey_2022_responses.csv')
 
     # Get the questions' titles
     question_title_2020 =  df_2020[0:1]
