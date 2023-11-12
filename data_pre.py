@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from rarfile import RarFile
-with RarFile('Kaggle_data.rar', 'r') as rar:
-    rar.extractall('Dataset')
+
 
 def data_preprocessing():
     df_2020 = pd.read_csv('Dataset/kaggle_survey_2020_responses.csv')
