@@ -5,3 +5,8 @@ matplotlib
 seaborn
 openai
 joblib
+plotly
+scipy
+Flask
+flask-cors
+pyforest
