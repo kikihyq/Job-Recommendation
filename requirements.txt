@@ -4,5 +4,4 @@ numpy
 matplotlib
 seaborn
 openai
-io
 joblib
